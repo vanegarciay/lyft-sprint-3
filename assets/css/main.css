@@ -6,3 +6,60 @@ Colors:
 #75726C;
 #EDE9E2
 */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Raleway";
+}
+/* Barra superior derecha */
+.barra-menu {
+    background-color: #E54E79;
+    padding: 35px 0 35px 0;
+    border: 0;
+    position: relative;    
+}
+/* logo de lyft parte superior izq */
+#logo-blanco {
+    width: 70px;
+    position: absolute;
+    top: 10px;
+    left: 180px;
+}
+
+/* menu parte superior derecha */
+#menu {
+    position: absolute;
+    top: 2em;
+    left: 60em;
+    bottom: 20em;
+}
+
+#drive, #explore, #help {
+    padding: 1em;
+    text-decoration: none;
+    color: white;
+}
+/* Seccion de fondo con el auto y el registro */
+header {
+    background-image: url(../img/cropped-Lyft-Promo-Codes-car-1.jpg);
+    padding: 20em 3em 3em;
+    text-align: center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-blend-mode: multiply;
+    background-repeat: no-repeat;
+    background-position: top center;
+    min-height: 30em;
+    background-attachment: fixed;
+    position: relative;
+    display: block;
+}
+ 
+/* bloque celeste */
+.bloque-celeste {
+    background-color: #00B2A9;
+    padding: 30px 0 30px 0;
+    border: 0;
+}
