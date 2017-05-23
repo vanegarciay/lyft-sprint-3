@@ -2,32 +2,45 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>Title</title>
+	<title>lyft</title>
     <link href="https://fonts.googleapis.com/css?family=Raleway:400,700,900" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/main.css">
 </head>
 <body>
     <!-- Menu nav arriba -->
-    <nav class="barra-menu">
-        <div >
-            <!-- Logito blanco de la barra superior izquierdo-->
-            <img src="assets/img/logo-white.png" alt="logo-blanco" id="logo-blanco">
-        </div>
-        <!-- Menu superior derecho-->
-        <div id="menu">
-            <a href="" id="drive">Drive</a>
-            <a href="" id="explore">Explore</a>
-            <a href="" id="help">Help</a>
+    <nav class="barra-fija" >
+        <div class="barra-menu">
+            <div >
+                <!-- Logito blanco de la barra superior izquierdo-->
+                <img src="assets/img/logo-white.png" alt="logo-blanco" id="logo-blanco">
+            </div>
+            <!-- Menu superior derecho-->
+            <div id="menu">
+                <a href="" id="drive">Drive</a>
+                <a href="" id="explore">Explore</a>
+                <a href="" id="help">Help</a>
+            </div>
         </div>
     </nav>
     <!-- fondo del auto y registro-->
     <header>
         <div class="fondo-auto"></div>
     </header>
-    <div class="bloque-celeste"></div>
     <!-- play with lyft-->
-    <div class="play-with">
-
+    <div class="secion-completa-play">
+        <!-- Bloque celeste superior-->
+        <div class="bloque-celeste"></div>
+        <!-- Bloque gris con texto play with lyft-->
+        <div class="play-with">PLAY WITH LYFT</div>
+        <!-- Bloque celeste contenedor-->
+        <div class="bloque-celeste-padre">
+            <!-- Bloque gris contenedor de inputs y boton star-->
+            <div id="bloque-gris-juego">
+                <input type="text" name="ejex" placeholder="X coordinate" class="input-coordenadas">
+                <input type="text" name="ejey" placeholder="Y coordinate" class="input-coordenadas">
+                <input type="submit" value="START" name="start" id="boton-start">
+            </div>
+        </div>
     </div>
 
     <script src="assets/js/main.js"></script>

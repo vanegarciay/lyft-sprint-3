@@ -12,11 +12,17 @@ body {
     font-family: "Raleway";
 }
 /* Barra superior derecha */
+nav.barra-fija {
+    position: fixed;
+    top: 0;
+    z-index: 1;
+    width: 100%;
+}
 .barra-menu {
     background-color: #E54E79;
     padding: 35px 0 35px 0;
     border: 0;
-    position: relative;    
+    position: relative;   
 }
 /* logo de lyft parte superior izq */
 #logo-blanco {
@@ -51,7 +57,7 @@ header {
     background-blend-mode: multiply;
     background-repeat: no-repeat;
     background-position: top center;
-    min-height: 30em;
+    min-height: 20em;
     background-attachment: fixed;
     position: relative;
     display: block;
@@ -60,6 +66,46 @@ header {
 /* bloque celeste */
 .bloque-celeste {
     background-color: #00B2A9;
+    padding: 25px 0 25px 0;
+    border: 0;
+}
+/* bloque gris con titulo "play with lyft" */
+.play-with {
+    background-color: #EDE9E2;
+    padding: 12px 0 12px 0;
+    border: 0;
+    text-align: center;
+    font-size: 1.5em;
+    color: #78756F;
+    font-weight: bold;   
+}
+
+/* bloque celeste padre del gris */
+.bloque-celeste-padre {
+    background-color: #00B2A9;
+    padding: 2em 0 9em 0;
+    border: 0;
+}
+
+/* bloque gris hijo del celeste donde va dentro el juego */
+#bloque-gris-juego {
+    background-color: #EDE9E2;
+    position: relative;
+    left: 16em;
+    width: 800px;
+    height: 200px;
     padding: 30px 0 30px 0;
+    top: 2em;
+    text-align: center;   
+}
+/* boton start */
+#boton-start {
+    background-color: #26A69A;
+    border-radius: 0.9em;
+    width: 95%;
+    height: 4em;
+    color: white;
+    position: relative;
+    top: 6em;
     border: 0;
 }
