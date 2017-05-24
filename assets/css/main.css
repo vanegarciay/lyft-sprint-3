@@ -1,11 +1,3 @@
-/*
-Colors: 
-#E54E79;
-#E56385;
-#00B2A9;
-#75726C;
-#EDE9E2
-*/
 body {
     margin: 0;
     padding: 0;
@@ -46,6 +38,7 @@ nav.barra-fija {
     position: relative;
     display: inline-block;
     font-size: 0.9em;
+    color: #fff2f5;
 }
 /* ESTO NO ME CUADRA */
 #menu a:hover {
@@ -163,7 +156,6 @@ header {
     position: relative;
     width: 90%;
     max-width: 800px;
-    height: 200px;
     padding: 30px 0 30px 0;
     margin-top: 2em;
     text-align: center;   
@@ -182,31 +174,30 @@ header {
     height: 4em;
     color: white;
     position: relative;
-    top: 6em;
+    margin-top: 6em;
+    margin-bottom: 1em;
     border: 0;
 }
 /* inputs de coordenadas e input numero de telefono de registro*/
 .input-coordenadas, #numero-telefono {
-  color: white;  
-  font-size:20px;
-  height: 40px;
-  display:inline-block;
-  border:none;
-  border-bottom:1px solid #888888;
-  background-color: transparent;
-  position: relative;
-  margin: 0;
-  width: 18em;
-
+    color: #444;  
+    font-size:20px;
+    height: 40px;
+    display:inline-block;
+    border:none;
+    border-bottom:1px solid #888888;
+    background-color: transparent;
+    position: relative;
+    margin: 0;
+    width: 18em;
 }
 .input-coordenadas {
     width: 15em;
 }
 
-/*input.input-coordenadas:focus, input#numero-telefono:focus {
-    border: 0;
-}*/
-
+.input-coordenadas:focus, #numero-telefono:focus {
+    border-bottom:1px solid #00B2A9;
+}
 
 ::-webkit-input-placeholder { /* Chrome/Opera/Safari */
   color: #dbd7d0;
@@ -316,4 +307,14 @@ footer {
 #more-links {
     float: right;
     color: #CCC;
+}
+
+canvas {
+    margin: 0 auto;
+    display: block; 
+    background-color: #75726D;
+}
+
+.hidden {
+    display: none;
 }

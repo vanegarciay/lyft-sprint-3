@@ -53,9 +53,12 @@
             <!-- Bloque gris contenedor de inputs y boton star-->
             <div class="ancho">
                 <div id="bloque-gris-juego">
-                    <i class="fa fa-car" aria-hidden="true"></i><input type="text" name="ejex" placeholder="X coordinate" class="input-coordenadas">
-                    <i class="fa fa-car" aria-hidden="true"></i><input type="text" name="ejey" placeholder="Y coordinate" class="input-coordenadas">
-                    <input type="submit" value="START" name="start" id="boton-start">
+                    <div id="coordenadas">
+                        <i class="fa fa-car" aria-hidden="true"></i><input type="text" name="ejex" placeholder="X coordinate" class="input-coordenadas" id="coordenadaX">
+                        <i class="fa fa-car" aria-hidden="true"></i><input type="text" name="ejey" placeholder="Y coordinate" class="input-coordenadas" id="coordenadaY">
+                        <input type="submit" value="START" name="start" id="boton-start">
+                    </div>
+                    <canvas class="hidden" width="700" height="420" id="area_de_dibujo"></canvas>
                 </div>
             </div>
         </div>
