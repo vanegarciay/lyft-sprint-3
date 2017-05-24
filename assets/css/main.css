@@ -17,40 +17,40 @@ nav.barra-fija {
     top: 0;
     z-index: 1;
     width: 100%;
+    box-shadow: 0 0 0.7em #333;
 }
 .barra-menu {
     background-color: #E54E79;
-    padding: 35px 0 35px 0;
+    padding: 0;
     border: 0;
-    position: relative;   
+    position: relative; 
+    height: 4em;  
 }
 /* logo de lyft parte superior izq */
 #logo-blanco {
-    width: 70px;
-    position: absolute;
-    top: 10px;
-    left: 180px;
+    width: 60px;
+    float: left;
+    padding-top: 0.8em;
 }
 
 /* menu parte superior derecha */
 #menu {
-    position: absolute;
-    top: 2em;
-    left: 60em;
-    bottom: 20em;
+    position: relative;
+    float: right;
+    height: 4em; 
+}
+
+#menu a {
+    padding-top: 1.6em;
+    padding-bottom: 1.6em;
+    position: relative;
+    display: inline-block;
+    font-size: 0.9em;
 }
 /* ESTO NO ME CUADRA */
-#drive:hover, #explore:hover, #help:hover {
-    /*cursor: pointer;
-    background-color: #CD476C;
-    padding: 25px 25px 25px 25px;
-    background-size: cover;
-    position: relative;
-    top: 0;
-    bottom: 2em;*/
+#menu a:hover {
     color: white;
-    border-bottom: 1px solid #CD476C;
-    border-top: 1px solid #CD476C;
+    background: rgba(1,1,1,0.1);
 }
 
 
@@ -105,28 +105,32 @@ header {
 }
 
 .boton-driver {
-display: inline-block;
-text-align: center;
-cursor: pointer;
-color: white;
-background-color: #E56385;
-letter-spacing: 1px;
-font-size: 90%;
-padding: 1em 1.5em;
-transition: .5s ease all;
-margin: 2em auto 0;
-border: none;
-text-transform: uppercase;
-font-weight: 300;
-border-radius: 10px;
-font-size: 85%;
-box-shadow: 0 3px 5px rgba(117, 114, 108, 0.5);
-font-family: 'Raleway', Helvetica, Arial, sans-serif;
+    display: inline-block;
+    text-align: center;
+    cursor: pointer;
+    color: white;
+    background-color: #E56385;
+    letter-spacing: 1px;
+    font-size: 90%;
+    padding: 1em 1.5em;
+    transition: .5s ease all;
+    margin: 2em auto 0;
+    border: none;
+    text-transform: uppercase;
+    font-weight: 300;
+    border-radius: 10px;
+    font-size: 85%;
+    box-shadow: 0 3px 5px rgba(117, 114, 108, 0.5);
+    font-family: 'Raleway', Helvetica, Arial, sans-serif;
 }
 .boton-driver:hover, .boton-driver:active, .boton-driver:focus {
-background-color: #E54E79;
-transition: .5s ease all;
-box-shadow: 0 5px 5px rgba(117, 114, 108, 0.5);
+    background-color: #E54E79;
+    transition: .5s ease all;
+    box-shadow: 0 5px 5px rgba(117, 114, 108, 0.5);
+}
+
+.boton-driver i {
+    font-size: 1.5em;
 }
 
 /* bloque celeste */
@@ -138,10 +142,10 @@ box-shadow: 0 5px 5px rgba(117, 114, 108, 0.5);
 /* bloque gris con titulo "play with lyft" */
 .play-with {
     background-color: #EDE9E2;
-    padding: 12px 0 12px 0;
+    padding: 15px;
     border: 0;
     text-align: center;
-    font-size: 1.5em;
+    font-size: 3.5em;
     color: #78756F;
     font-weight: bold;   
 }
@@ -149,7 +153,7 @@ box-shadow: 0 5px 5px rgba(117, 114, 108, 0.5);
 /* bloque celeste padre del gris */
 .bloque-celeste-padre {
     background-color: #00B2A9;
-    padding: 2em 0 9em 0;
+    padding: 2em 0 2.4em 0;
     border: 0;
 }
 
@@ -157,12 +161,18 @@ box-shadow: 0 5px 5px rgba(117, 114, 108, 0.5);
 #bloque-gris-juego {
     background-color: #EDE9E2;
     position: relative;
-    left: 16em;
-    width: 800px;
+    width: 90%;
+    max-width: 800px;
     height: 200px;
     padding: 30px 0 30px 0;
-    top: 2em;
+    margin-top: 2em;
     text-align: center;   
+}
+
+#bloque-gris-juego i {
+    color: #75726C;
+    padding: 10px;
+    font-size: 1.8em;
 }
 /* boton start */
 #boton-start {
@@ -175,7 +185,7 @@ box-shadow: 0 5px 5px rgba(117, 114, 108, 0.5);
     top: 6em;
     border: 0;
 }
-/* inputs de coordenadas*/
+/* inputs de coordenadas e input numero de telefono de registro*/
 .input-coordenadas, #numero-telefono {
   color: white;  
   font-size:20px;
@@ -193,9 +203,9 @@ box-shadow: 0 5px 5px rgba(117, 114, 108, 0.5);
     width: 15em;
 }
 
-.input-coordenadas:focus, #numero-telefono;focus {
-    border: transparent;
-}
+/*input.input-coordenadas:focus, input#numero-telefono:focus {
+    border: 0;
+}*/
 
 
 ::-webkit-input-placeholder { /* Chrome/Opera/Safari */
@@ -219,3 +229,91 @@ box-shadow: 0 5px 5px rgba(117, 114, 108, 0.5);
   border: 0;
 }
 
+/* Footer*/
+
+footer {
+    color: #fff;
+    text-align: center;
+}
+
+#contenido-links div div {
+    text-align: left;
+    padding: 1em 0 1.7em 0;
+}
+
+#contenido-links div h1 {
+    font-weight: normal;
+    font-size: 1.5em;
+}
+
+#contenido-links div p {
+    font-size: 0.9em;
+    color: #EEE;
+}
+
+#contenido-links div a {
+    font-size: 0.9em;
+    color: #DDD;
+    text-decoration: none;
+}
+
+#contenido-links {
+    background-color: #75726C;
+}
+
+.ancho {
+    max-width: 900px; 
+    margin: 0 auto;
+}
+
+#sprint {
+    width: 40%;
+    float: left;
+}
+
+#links {
+    float: right;
+    width: 27%;
+}
+
+#links ul, #links ul li {
+    list-style: none;
+    margin: 0;
+    -webkit-margin-before: 0;
+    -webkit-margin-after: 0;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px;
+    -webkit-padding-start: 0;
+}
+
+#links ul {
+    padding: 0;
+    margin: 0;
+}
+
+#links ul li {
+    padding: 2px 0;
+}
+
+#bloque-gris-inferior {
+    background-color: #706D68;
+    text-align: left;
+    font-size: 0.9em;
+    padding: 1em 0;
+}
+
+.clear {
+    clear: both;
+    margin: 0;
+    padding: 0;
+}
+
+#copyleft {
+    float: left;
+    color: #CCC;
+}
+
+#more-links {
+    float: right;
+    color: #CCC;
+}

@@ -11,15 +11,16 @@
     <!-- Menu nav arriba -->
     <nav class="barra-fija" >
         <div class="barra-menu">
-            <div >
+            <div class="ancho">
                 <!-- Logito blanco de la barra superior izquierdo-->
                 <img src="assets/img/logo-white.png" alt="logo-blanco" id="logo-blanco">
-            </div>
-            <!-- Menu superior derecho-->
-            <div id="menu">
-                <a href="" id="drive">Drive</a>
-                <a href="" id="explore">Explore</a>
-                <a href="" id="help">Help</a>
+                <!-- Menu superior derecho-->
+                <div id="menu">
+                    <a href="" id="drive">Drive</a>
+                    <a href="" id="explore">Explore</a>
+                    <a href="" id="help">Help</a>
+                </div>
+                <div class="clear"></div>  
             </div>
         </div>
     </nav>
@@ -50,14 +51,43 @@
         <!-- Bloque celeste contenedor-->
         <div class="bloque-celeste-padre">
             <!-- Bloque gris contenedor de inputs y boton star-->
-            <div id="bloque-gris-juego">
-                <i class="fa fa-car" aria-hidden="true"></i><input type="text" name="ejex" placeholder="X coordinate" class="input-coordenadas">
-                <i class="fa fa-car" aria-hidden="true"></i><input type="text" name="ejey" placeholder="Y coordinate" class="input-coordenadas">
-                <input type="submit" value="START" name="start" id="boton-start">
+            <div class="ancho">
+                <div id="bloque-gris-juego">
+                    <i class="fa fa-car" aria-hidden="true"></i><input type="text" name="ejex" placeholder="X coordinate" class="input-coordenadas">
+                    <i class="fa fa-car" aria-hidden="true"></i><input type="text" name="ejey" placeholder="Y coordinate" class="input-coordenadas">
+                    <input type="submit" value="START" name="start" id="boton-start">
+                </div>
             </div>
         </div>
     </div>
-
+    <!-- footer-->
+    <footer>
+        <div id="contenido-links">
+            <div class="ancho">
+                <div id="sprint">
+                    <h1>Sprint 3 - Project</h1> 
+                    <p>You can custom the footer and its content</p>
+                </div>
+                <div id="links">
+                    <h1>Links</h1> 
+                    <ul>
+                        <li><a href="#">Link 1</a></li>
+                        <li><a href="#">Link 2</a></li>
+                        <li><a href="#">Link 3</a></li>
+                        <li><a href="#">Link 4</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="clear"></div>
+        </div>
+        <div id="bloque-gris-inferior">
+            <div class="ancho">
+                <span id="copyleft">&copy; 2017 Lyft & Laboratoria. Inc</span>
+                <span id="more-links">More Links</span>
+                <div class="clear"></div>
+            </div>    
+        </div>
+    </footer>
     <script src="assets/js/main.js"></script>
 </body>
 </html>
