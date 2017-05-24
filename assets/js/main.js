@@ -1,4 +1,9 @@
 var submit = document.getElementById("boton-start");
+
+var telefono = document.getElementById("numero-telefono");
+driver.addEventListener('click', validateNumber);
+
+
 submit.addEventListener("click", function() {
 
     if (document.getElementById("coordenadaX").value != "" && document.getElementById("coordenadaX").value <= 10
@@ -23,7 +28,7 @@ submit.addEventListener("click", function() {
       DOWN: 40,
       LEFT: 37,
       RIGHT: 39
-    };
+    }; 
 
     function dibujarLinea(color, xinicial, yinicial, xfinal, yfinal, lienzo) {
       lienzo.beginPath();
@@ -63,6 +68,20 @@ submit.addEventListener("click", function() {
     }
 
 });
+
+function validateNumber(){
+  if (telefono.value != '') {
+    if (parseInt(telefono.value.trim()).toString().length == 9 && telefono.value.trim().length == 9) {      
+      alert('Gracias por registrarte!');
+      telefono.value = '';
+    } else {
+      alert('El teléfono debe contener 9 dígitos');
+    }
+    } else {
+      alert('Teléfono requerido');
+    }
+  }
+
 
 
 
